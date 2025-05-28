@@ -1,0 +1,9 @@
+{
+    "mqtt_address": "tcp://127.0.0.1:1883",
+    "client_id_subscriber": "WiFiSubscriber",
+    "client_id_publisher": "WiFiPublisher",
+    "topic": "wifi/scan",
+    "ack_topic": "wifi/scan/ack",
+    "qos": 1,
+    "timeout": 10000
+}

@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/vvdn/RAVI/MQTT/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -I\/usr\/include\/libnl3$/;"	m
+CONFIG_FILE	wifi_publisher.c	/^#define CONFIG_FILE /;"	d	file:
+CONFIG_FILE	wifi_subscribe.c	/^#define CONFIG_FILE /;"	d	file:
+CONFIG_LOADER_H	config_loader.h	/^#define CONFIG_LOADER_H$/;"	d
+LIBS	Makefile	/^LIBS = -lnl-3 -lnl-genl-3 -ljson-c -lpaho-mqtt3c$/;"	m
+SRC	Makefile	/^SRC = config_loader.c$/;"	m
+ack_arrived	wifi_publisher.c	/^int ack_arrived(void *context, char *topicName, int topicLen, MQTTClient_message *message) {$/;"	f	typeref:typename:int
+ack_topic	config.json	/^    "ack_topic": "wifi\/scan\/ack",$/;"	s
+all	Makefile	/^all: wifi_publisher wifi_subscribe$/;"	t
+clean	Makefile	/^clean:$/;"	t
+client	wifi_publisher.c	/^MQTTClient client;$/;"	v	typeref:typename:MQTTClient
+client_id_publisher	config.json	/^    "client_id_publisher": "WiFiPublisher",$/;"	s
+client_id_subscriber	config.json	/^    "client_id_subscriber": "WiFiSubscriber",$/;"	s
+config_json	config_loader.c	/^json_object *config_json = NULL;$/;"	v	typeref:typename:json_object *
+connlost	wifi_subscribe.c	/^void connlost(void *context, char *cause) {$/;"	f	typeref:typename:void
+freq_to_channel	wifi_publisher.c	/^int freq_to_channel(int freq) {$/;"	f	typeref:typename:int
+get_all_wireless_interfaces	wifi_publisher.c	/^char **get_all_wireless_interfaces(int *count) {$/;"	f	typeref:typename:char **
+load_config	config_loader.c	/^int load_config(const char *filename) {$/;"	f	typeref:typename:int
+main	wifi_publisher.c	/^int main() {$/;"	f	typeref:typename:int
+main	wifi_subscribe.c	/^int main() $/;"	f	typeref:typename:int
+mqtt_address	config.json	/^    "mqtt_address": "tcp:\/\/127.0.0.1:1883",$/;"	s
+msgarrvd	wifi_subscribe.c	/^int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message) {$/;"	f	typeref:typename:int
+print_wifi_info	wifi_publisher.c	/^int print_wifi_info(struct nl_msg *msg, void *arg) {$/;"	f	typeref:typename:int
+qos	config.json	/^    "qos": 1,$/;"	n
+timeout	config.json	/^    "timeout": 10000$/;"	n
+topic	config.json	/^    "topic": "wifi\/scan",$/;"	s
+wifi_publisher	Makefile	/^wifi_publisher: wifi_publisher.c $(SRC)$/;"	t
+wifi_subscribe	Makefile	/^wifi_subscribe: wifi_subscribe.c $(SRC)$/;"	t
